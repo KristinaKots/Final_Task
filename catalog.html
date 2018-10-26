@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TL Catalog</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i" rel="stylesheet">
+  <link href="css/normalize-min.css" rel="stylesheet">
+  <link href="css/styles-min.css" rel="stylesheet">
+</head>
+<body>
+<div class="main-wrapper">
+  <!--________________________HEADER________________________-->
+  <header class="header">
+    <div class="header__top-header">
+      <a class="logo-link" href="start.html">
+        <h1 class="logo--short" title="Home">TL</h1>
+        <h1 class="logo--full" title="Home">Template</h1>
+      </a>
+      <div class="header__options">
+        <div class="authorization">
+          <a class="authorization__email" href="#">E-mail</a>
+          <a class="authorization__sign-up" href="#">Sign up</a>
+        </div>
+        <a class="shopping-bag-link" href="shopping-bag.html" title="Shopping Bag">Bag
+          <p class="shopping-bag-link__price hidden">
+            &#163;<span id="bag-price">0</span>
+          </p>
+          <p class="shopping-bag-link__counter">
+            (<span id="bag-counter">0</span>)
+          </p>
+        </a>
+        <button id="menu-btn" class="menu-btn menu-btn--opened" type="button" title="Menu">
+        </button>
+      </div>
+    </div>
+    <nav id="nav" class="nav hidden">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link nav__link--active" href="#">Women</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Men</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Handbags</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Accessories</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Sale</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">New Arrivals</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Clearance</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Store Locator</a></li>
+      </ul>
+      <div class="search">
+        <input class="search__field" type="search" name="search" placeholder="Style Name">
+      </div>
+    </nav>
+  </header>
+  <div class="border"></div>
+  <!--________FILTERS HEADER________-->
+  <header class="filters-header">
+    <ul class="selected-filters">
+      <li id="selected-fashion" class="selected-filters__item
+               selected-filters__item-selected">Casual style,
+      </li>
+      <li id="selected-type" class="selected-filters__item">Product type,
+      </li>
+      <li id="selected-color" class="selected-filters__item">Color,
+      </li>
+      <li id="selected-brand" class="selected-filters__item
+              selected-filters__item-selected">Antipodium,
+      </li>
+      <li id="selected-size" class="selected-filters__item
+              selected-filters__item-selected">UK 18,
+      </li>
+      <li id="selected-price" class="selected-filters__item">Price range
+      </li>
+    </ul>
+    <span id="filters-open-icon" class="filters-open-icon"></span>
+    <button id="filters-btn" class="filters-btn filters-btn--opened"></button>
+
+    <!--________________filters________________-->
+    <div id="filters" class="filters hidden">
+      <div class="filter filter-fashion filter--selected">
+        <div class="filter__headings">
+          <h4 class="filter__heading">Fashion</h4>
+          <p class="filter__selected-heading">Casual style</p>
+        </div>
+        <ul class="filter__list filter-fashion__list">
+          <li class="filter__item">Not selected</li>
+          <li class="filter__item">Nail the 90s</li>
+          <li class="filter__item filter__item--active">Casual style</li>
+          <li class="filter__item">New Look</li>
+          <li class="filter__item">Sport</li>
+          <li class="filter__item">Vintage</li>
+          <li class="filter__item">Classical style</li>
+        </ul>
+      </div>
+
+      <div class="filter filter-type">
+        <div class="filter__headings">
+          <h4 class="filter__heading">Product Type</h4>
+          <p class="filter__selected-heading"></p>
+        </div>
+        <ul class="filter__list filter-type__list">
+          <li class="filter__item filter__item--not-selected">Not selected</li>
+          <li class="filter__item">Coats & Jackets</li>
+          <li class="filter__item">Dresses</li>
+          <li class="filter__item">Jersey Tops</li>
+        </ul>
+      </div>
+
+      <div class="filter filter-color">
+        <div class="filter__headings">
+          <h4 class="filter__heading">Color</h4>
+          <p class="filter__selected-heading"></p>
+        </div>
+        <ul class="filter__list filter-color__list">
+          <li class="filter__item filter__item--not-selected">Not selected</li>
+          <li class="filter__item">Black</li>
+          <li class="filter__item">Blue</li>
+          <li class="filter__item">Red</li>
+          <li class="filter__item">Green</li>
+          <li class="filter__item">Golden</li>
+        </ul>
+      </div>
+
+      <div class="filter filter-brand filter--selected">
+        <div class="filter__headings">
+          <h4 class="filter__heading">Brand</h4>
+          <p class="filter__selected-heading">Antipodium</p>
+        </div>
+        <ul class="filter__list filter-brand__list">
+          <li class="filter__item">Not selected</li>
+          <li class="filter__item">Chi Chi London</li>
+          <li class="filter__item filter__item--active">Antipodium</li>
+          <li class="filter__item">Adidas</li>
+          <li class="filter__item">New Balance</li>
+          <li class="filter__item">River Island</li>
+        </ul>
+      </div>
+
+      <div class="filter filter-size filter--selected">
+        <div class="filter__headings">
+          <h4 class="filter__heading">Size</h4>
+          <p class="filter__selected-heading">UK 18</p>
+        </div>
+        <ul class="filter__list filter-size__list">
+          <li class="filter__item">Not selected</li>
+          <li class="filter__item">UK 2</li>
+          <li class="filter__item filter__item--active">UK 18</li>
+          <li class="filter__item">UK 18L</li>
+          <li class="filter__item">UK 20</li>
+          <li class="filter__item">UK 20L</li>
+          <li class="filter__item">UK 20S</li>
+          <li class="filter__item">UK 22S</li>
+          <li class="filter__item">UK 22</li>
+        </ul>
+      </div>
+
+      <div class="filter filter-price">
+        <div class="filter__headings">
+          <h4 class="filter__heading">Price range</h4>
+          <p class="filter__selected-heading"></p>
+        </div>
+        <ul class="filter__list filter-price__list">
+          <li class="filter__item  filter__item--not-selected">Not selected</li>
+          <li class="filter__item">To &#163;99</li>
+          <li class="filter__item"> &#163;100-&#163;299</li>
+          <li class="filter__item">From &#163;300</li>
+        </ul>
+      </div>
+
+    </div>
+  </header>
+  <div class="border"></div>
+
+  <!--________________________CATALOG________________________-->
+  <div class="catalog">
+    <ul class="catalog__list"></ul>
+    <a class="catalog__btn button" href="#">Show more</a>
+  </div>
+
+  <div class="border"></div>
+  <!--________________PROMO BOTTOM________________-->
+  <article class="promo-bottom">
+    <a class="promo-bottom__item" href="#">
+      <figure class="promo-bottom__item-wrapper">
+        <img class="promo-bottom__item-img" src="img/promo_3.jpg"
+             alt="Adidas Blue" width="650" height="384">
+        <figcaption class="promo-bottom__item-caption">
+          <h3 class="promo-bottom__item-name">
+            Adidas Blue
+          </h3>
+          <p class="promo-bottom__item-text">
+            For men
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+    <a class="promo-bottom__item" href="#">
+      <figure class="promo-bottom__item-wrapper">
+        <img class="promo-bottom__item-img" src="img/promo_4.jpg"
+             alt="Repair Patches" width="324" height="384">
+        <figcaption class="promo-bottom__item-caption promo-bottom__item-caption--bottom">
+          <h3 class="promo-bottom__item-name">
+            Repair Patches
+          </h3>
+          <p class="promo-bottom__item-text">
+            &#163;150.50
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+    <a class="promo-bottom__item" href="#">
+      <figure class="promo-bottom__item-wrapper">
+        <img class="promo-bottom__item-img" src="img/promo_5.jpg"
+             alt="Sale" width="324" height="384">
+        <figcaption class="promo-bottom__item-caption promo-bottom__item-caption--bottom">
+          <h3 class="promo-bottom__item-name">
+            Sale
+          </h3>
+          <p class="promo-bottom__item-text">
+            -70%
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+  </article>
+
+</div>
+<div class="border"></div>
+<!--________________________FOOTER________________________-->
+<footer class="footer">
+  <!--1 section-->
+  <div class="footer-links">
+    <section class="footer-links__section">
+      <h5 class="footer-links__heading">Quick Links</h5>
+      <ul class="footer-links__list">
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Store Locator</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Gift Cards</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Size guide</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">About us</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Support</a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-links__section">
+      <h5 class="footer-links__heading">Customer Care</h5>
+      <ul class="footer-links__list">
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Customer service</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Track my order</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Return policy</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Shipping & delivery</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Contact us</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Careers</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <!--2 section-->
+  <div class="contacts">
+    <section class="contacts__section">
+      <h5 class="contacts__heading">Questions</h5>
+      <a class="contacts__link tweet-us-link link" href="#">Tweet us <b>@template</b></a>
+    </section>
+    <section class="contacts__section">
+      <h5 class="contacts__heading">Order by phone</h5>
+      <a class="contacts__link link" href="tel:88004094712">8-800-409-47-12</a>
+    </section>
+    <div class="delivery-section">
+      <p class="delivery-section__paragraph">
+        We have our own delivery service which operates in 23 major
+        European cities. Delivery time - 3-5 days.
+      </p>
+    </div>
+  </div>
+  <!--3 section-->
+  <ul class="other-links">
+    <li class="other-links__item">
+      <a class="other-links__link link" href="#">Legal notice</a>
+    </li>
+    <li class="other-links__item">
+      <a class="other-links__link link" href="#">Privacy Policy</a>
+    </li>
+    <li class="other-links__item">
+      <a class="other-links__link link" href="#">Site map</a>
+    </li>
+  </ul>
+  <!-- 4 section-->
+  <div class="social">
+    <a class="social__link" href="#">
+      <img src="img/fb.png" alt="Facebook" width="8" height="14">
+    </a>
+    <a class="social__link" href="#">
+      <img src="img/twi.png" alt="Twitter" width="14" height="11">
+    </a>
+  </div>
+  <!--5 section-->
+  <p class="copyright">&#169;2010-2015, The Template Group inc.</p>
+  <!--6 section-->
+  <button class="share" type="button">
+    <b class="share__caption">Share</b>
+    <span class="share__counter">1 437</span>
+  </button>
+</footer>
+<div class="footer-border"></div>
+
+<!--scripts-->
+<script type="text/template" id="item-template">
+  <li class="catalog__item">
+    <a class="item" href="item.html">
+      <figure class="item__figure">
+        <img class="item__img" src="<%-thumbnail%>" alt="<%-title%>" width="240" height="340">
+        <% if (hasNew) { %>
+        <span class="item__new">NEW</span>
+        <% } %>
+        <figcaption class="item__overlay">
+          <p class="item__overlay-caption">View item</p>
+        </figcaption>
+      </figure>
+      <div class="item__caption">
+        <h4 class="item__name"><%-title%></h4>
+        <% if (discountedPrice !== price && discountedPrice) { %>
+        <span class="item__old-price">&#163;<%-price.toFixed(2)%></span>
+        <% } %>
+        <span class="item__price">&#163;
+          <% if (discountedPrice) { %>
+            <%-discountedPrice.toFixed(2)%>
+          <% } else { %>
+            <%-price.toFixed(2)%>
+          <% } %>
+          </span>
+      </div>
+    </a>
+  </li>
+</script>
+<script type="text/template" id="promo-template">
+  <li class="catalog__item--promo">
+    <article class="promo-center">
+      <h3 class="promo-center__heading">
+        Last weekend
+        <span class="promo-center__heading-span">extra 50%</span>
+        off on all reduced boots and shoulder bags
+      </h3>
+      <p class="promo-center__paragraph">
+        This offer is valid in-store and online.
+        Prices displayed reflect this additional discount.
+        This offer ends at 11.59 GMT on March 1st 2018
+      </p>
+    </article>
+  </li>
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+<script src="js/common-min.js"></script>
+<script src="data/catalog.js"></script>
+<script src="js/catalog-page-min.js"></script>
+</body>
+</html>

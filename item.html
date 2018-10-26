@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TL Item</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i" rel="stylesheet">
+  <link href="css/normalize-min.css" rel="stylesheet">
+  <link href="css/styles-min.css" rel="stylesheet">
+</head>
+<body>
+<div class="main-wrapper">
+  <!--_____________________HEADER_______________________-->
+  <header class="header">
+    <div class="header__top-header">
+      <a class="logo-link" href="start.html">
+        <h1 class="logo--short" title="Home">TL</h1>
+        <h1 class="logo--full" title="Home">Template</h1>
+      </a>
+      <div class="header__options">
+        <div class="authorization">
+          <a class="authorization__email" href="#">E-mail</a>
+          <a class="authorization__sign-up" href="#">Sign up</a>
+        </div>
+        <a class="shopping-bag-link" href="shopping-bag.html" title="Shopping Bag">Bag
+          <p class="shopping-bag-link__price hidden">
+            &#163;<span id="bag-price">0</span>
+          </p>
+          <p class="shopping-bag-link__counter">
+            (<span id="bag-counter">0</span>)
+          </p>
+        </a>
+        <button id="menu-btn" class="menu-btn menu-btn--opened" type="button" title="Menu">
+        </button>
+      </div>
+    </div>
+    <nav id="nav" class="nav hidden">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link nav__link--active" href="#">Women</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Men</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Handbags</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Accessories</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Sale</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">New Arrivals</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Clearance</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Store Locator</a></li>
+      </ul>
+      <div class="search">
+        <input class="search__field" type="search" name="search" placeholder="Style Name">
+      </div>
+    </nav>
+  </header>
+  <div class="border"></div>
+  <!--________Header bottom________-->
+  <header class="header-bottom">
+    <a class="breadcrumb-link" href="catalog.html">&lt; Back to catalog</a>
+  </header>
+  <div class="border"></div>
+
+  <main>
+    <article class="item-full">
+      <!--_______Photo Section________-->
+      <div class="item-full__photo-section">
+        <div class="item-full__photo-full-wrapper">
+          <img class="item-full__photo-full"
+               src="img/man_full_0.jpg" alt="Item"
+               height="394" width="590">
+        </div>
+        <ul class="item-full__thumbnail-list">
+          <li class="item-full__thumbnail-item">
+            <img class="item-full__thumbnail-photo"
+                 src="img/man_full_0.jpg"
+                 alt="Item thumbnail"
+                 height="130"
+                 width="196">
+            <div class="item-full__thumbnail-overlay
+                      item-full__thumbnail-overlay--active"></div>
+          </li>
+          <li class="item-full__thumbnail-item">
+            <img class="item-full__thumbnail-photo"
+                 src="img/man_tumbnail_1.jpg"
+                 alt="Item thumbnail"
+                 height="130"
+                 width="196">
+            <div class="item-full__thumbnail-overlay"></div>
+          </li>
+          <li class="item-full__thumbnail-item">
+            <img class="item-full__thumbnail-photo"
+                 src="img/man_tumbnail_2.jpg"
+                 alt="Item thumbnail"
+                 height="130"
+                 width="196">
+            <div class="item-full__thumbnail-overlay"></div>
+          </li>
+        </ul>
+      </div>
+      <!--_________Content/caption Section_________-->
+      <div class="item-full__content-section">
+        <h3 class="item-full__name">Dark classic fit suit</h3>
+        <p class="item-full__price">&#163;<span id="item-price">180.60</span></p>
+        <p class="item-full__description">
+          Featuring fine Italian wool, this elegant suit has pick-stitch edging,
+          cascade buttons at the cuffs and a subtle stripe pattern throughout.
+        </p>
+
+        <div class="item-full__size">
+          <h4 class="item-full__size-heading">Size</h4>
+          <ul class="item-full__size-list">
+            <li class="item-full__size-item item-full__option-item--selected">UK 52</li>
+            <li class="item-full__size-item">UK 54</li>
+            <li class="item-full__size-item">UK 56</li>
+          </ul>
+        </div>
+
+        <div class="item-full__color">
+          <h4 class="item-full__color-heading">Color</h4>
+          <ul class="item-full__color-list">
+            <li class="item-full__color-item">Black</li>
+            <li class="item-full__color-item item-full__option-item--selected">Blue</li>
+          </ul>
+        </div>
+        <!--________Item full ADD Button________-->
+        <button class="item-full__add-btn button">Add to bag</button>
+      </div>
+    </article>
+    <div class="border"></div>
+    <!--________________PROMO BOTTOM________________-->
+    <article class="promo-bottom">
+      <a class="promo-bottom__item" href="#">
+        <figure class="promo-bottom__item-wrapper">
+          <img class="promo-bottom__item-img" src="img/promo_3.jpg" alt="Adidas Blue" width="650" height="384">
+          <figcaption class="promo-bottom__item-caption">
+            <h3 class="promo-bottom__item-name">
+              Adidas Blue
+            </h3>
+            <p class="promo-bottom__item-text">
+              For men
+            </p>
+          </figcaption>
+        </figure>
+      </a>
+      <a class="promo-bottom__item" href="#">
+        <figure class="promo-bottom__item-wrapper">
+          <img class="promo-bottom__item-img" src="img/promo_4.jpg" alt="Repair Patches" width="324" height="384">
+          <figcaption class="promo-bottom__item-caption promo-bottom__item-caption--bottom">
+            <h3 class="promo-bottom__item-name">
+              Repair Patches
+            </h3>
+            <p class="promo-bottom__item-text">
+              &#163;150.50
+            </p>
+          </figcaption>
+        </figure>
+      </a>
+      <a class="promo-bottom__item" href="#">
+        <figure class="promo-bottom__item-wrapper">
+          <img class="promo-bottom__item-img" src="img/promo_5.jpg" alt="Sale" width="324" height="384">
+          <figcaption class="promo-bottom__item-caption promo-bottom__item-caption--bottom">
+            <h3 class="promo-bottom__item-name">
+              Sale
+            </h3>
+            <p class="promo-bottom__item-text">
+              -70%
+            </p>
+          </figcaption>
+        </figure>
+      </a>
+    </article>
+  </main>
+
+</div>
+<div class="border"></div>
+<!--________________________FOOTER________________________-->
+<footer class="footer">
+  <!--1 section-->
+  <div class="footer-links">
+    <section class="footer-links__section">
+      <h5 class="footer-links__heading">Quick Links</h5>
+      <ul class="footer-links__list">
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Store Locator</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Gift Cards</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Size guide</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">About us</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Support</a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-links__section">
+      <h5 class="footer-links__heading">Customer Care</h5>
+      <ul class="footer-links__list">
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Customer service</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Track my order</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Return policy</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Shipping & delivery</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Contact us</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Careers</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <!--2 section-->
+  <div class="contacts">
+    <section class="contacts__section">
+      <h5 class="contacts__heading">Questions</h5>
+      <a class="contacts__link tweet-us-link link" href="#">Tweet us <b>@template</b></a>
+    </section>
+    <section class="contacts__section">
+      <h5 class="contacts__heading">Order by phone</h5>
+      <a class="contacts__link link" href="tel:88004094712">8-800-409-47-12</a>
+    </section>
+    <div class="delivery-section">
+      <p class="delivery-section__paragraph">
+        We have our own delivery service which operates in 23 major
+        European cities. Delivery time - 3-5 days.
+      </p>
+    </div>
+  </div>
+  <!--3 section-->
+  <ul class="other-links">
+    <li class="other-links__item">
+      <a class="other-links__link link" href="#">Legal notice</a>
+    </li>
+    <li class="other-links__item">
+      <a class="other-links__link link" href="#">Privacy Policy</a>
+    </li>
+    <li class="other-links__item">
+      <a class="other-links__link link" href="#">Site map</a>
+    </li>
+  </ul>
+  <!-- 4 section-->
+  <div class="social">
+    <a class="social__link" href="#">
+      <img src="img/fb.png" alt="Facebook" width="8" height="14">
+    </a>
+    <a class="social__link" href="#">
+      <img src="img/twi.png" alt="Twitter" width="14" height="11">
+    </a>
+  </div>
+  <!--5 section-->
+  <p class="copyright">&#169;2010-2015, The Template Group inc.</p>
+  <!--6 section-->
+  <button class="share" type="button">
+    <b class="share__caption">Share</b>
+    <span class="share__counter">1 437</span>
+  </button>
+</footer>
+<div class="footer-border"></div>
+
+<!--scripts-->
+<script src="js/common-min.js"></script>
+<script src="data/catalog.js"></script>
+<script src="js/item-min.js"></script>
+</body>
+</html>

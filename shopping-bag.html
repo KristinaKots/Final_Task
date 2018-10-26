@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TL Shopping Bag</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i" rel="stylesheet">
+  <link href="css/normalize-min.css" rel="stylesheet">
+  <link href="css/styles-min.css" rel="stylesheet">
+</head>
+<body>
+<div class="main-wrapper">
+  <!--________________________HEADER________________________-->
+  <header class="header">
+    <div class="header__top-header">
+      <a class="logo-link" href="start.html">
+        <h1 class="logo--short" title="Home">TL</h1>
+        <h1 class="logo--full" title="Home">Template</h1>
+      </a>
+      <div class="header__options">
+        <div class="authorization">
+          <a class="authorization__email" href="#">E-mail</a>
+          <a class="authorization__sign-up" href="#">Sign up</a>
+        </div>
+        <a class="shopping-bag-link" href="shopping-bag.html" title="Shopping Bag">Bag
+          <p class="shopping-bag-link__price">
+            &#163;<span id="header-bag-price">236.50</span>
+          </p>
+          <p class="shopping-bag-link__counter">
+            (<span id="bag-counter">4</span>)
+          </p>
+        </a>
+        <button id="menu-btn" class="menu-btn menu-btn--opened" type="button" title="Menu">
+        </button>
+      </div>
+    </div>
+    <nav id="nav" class="nav hidden">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link nav__link--active" href="#">Women</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Men</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Handbags</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Accessories</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Sale</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">New Arrivals</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Clearance</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Store Locator</a></li>
+      </ul>
+      <div class="search">
+        <input class="search__field" type="search" name="search" placeholder="Style Name">
+      </div>
+    </nav>
+  </header>
+  <div class="border"></div>
+  <!--________Header bottom________-->
+  <header class="header-bottom">
+    <h2 class="header-bottom__heading">Shopping bag</h2>
+  </header>
+  <div class="border"></div>
+
+  <!--________SHOPPING BAG________-->
+  <article class="shopping-bag" id="shopping-bag">
+    <ul class="shopping-bag__list">
+<!--1 item-->
+      <li class="shopping-bag__item">
+        <div class="item item--bag">
+          <figure class="item__figure item__figure--bag">
+            <img class="item__img" src="img/item_1.jpg" alt="T-shirt" width="240" height="340">
+            <span class="item__new">NEW</span>
+            <figcaption class="item__overlay">
+              <p class="item__overlay-caption">View item</p>
+            </figcaption>
+          </figure>
+          <div class="item__caption item__caption--bag">
+            <h4 class="item__name item__name--bag">Only Skinny Jeans</h4>
+            <p class="item__price item__price--bag">
+              &#163;<span class="item__price-value">65.50</span>
+            </p>
+            <p class="bag-item__color">
+              Color: <span class="bag-item__color-selected">Philipa wash</span>
+            </p>
+            <p class="bag-item__size">
+              Size: <span class="bag-item__size-selected">UK 17</span>
+            </p>
+            <div class="bag-item__quantity">
+              <span>Quantity: </span>
+              <button class="bag-item__minus" type="button">-</button>
+              <span class="bag-item__quantity-number">1</span>
+              <button class="bag-item__plus" type="button">+</button>
+            </div>
+            <button class="bag-item__delete-btn" type="button">
+              Remove item
+            </button>
+          </div>
+        </div>
+      </li>
+      <!--2 item-->
+      <li class="shopping-bag__item">
+        <div class="item item--bag">
+          <figure class="item__figure item__figure--bag">
+            <img class="item__img" src="img/item_11.jpg" alt="T-shirt" width="240" height="340">
+            <figcaption class="item__overlay">
+              <p class="item__overlay-caption">View item</p>
+            </figcaption>
+          </figure>
+          <div class="item__caption item__caption--bag">
+            <h4 class="item__name item__name--bag">Paul & Joe Sister Jumper with Neon Trims</h4>
+            <p class="item__price item__price--bag">
+              &#163;<span class="item__price-value">19.75</span>
+            </p>
+            <p class="bag-item__color">
+              Color: <span class="bag-item__color-selected">Blue</span>
+            </p>
+            <p class="bag-item__size">
+              Size: <span class="bag-item__size-selected">UK 18</span>
+            </p>
+            <div class="bag-item__quantity">
+              <span>Quantity: </span>
+              <button class="bag-item__minus" type="button">-</button>
+              <span class="bag-item__quantity-number">1</span>
+              <button class="bag-item__plus" type="button">+</button>
+            </div>
+            <button class="bag-item__delete-btn" type="button">
+              Remove item
+            </button>
+          </div>
+        </div>
+      </li>
+      <!--3 item-->
+      <li class="shopping-bag__item">
+        <div class="item item--bag">
+          <figure class="item__figure item__figure--bag">
+            <img class="item__img" src="img/item_7.jpg" alt="T-shirt" width="240" height="340">
+            <figcaption class="item__overlay">
+              <p class="item__overlay-caption">View item</p>
+            </figcaption>
+          </figure>
+          <div class="item__caption item__caption--bag">
+            <h4 class="item__name item__name--bag">Boyfriend T-Shirt with Bohemian print</h4>
+            <p class="item__price item__price--bag">
+              &#163;<span class="item__price-value">90.00</span>
+            </p>
+            <p class="bag-item__color">
+              Color: <span class="bag-item__color-selected">Black</span>
+            </p>
+            <p class="bag-item__size">
+              Size: <span class="bag-item__size-selected">UK 18</span>
+            </p>
+            <div class="bag-item__quantity">
+              <span>Quantity: </span>
+              <button class="bag-item__minus" type="button">-</button>
+              <span class="bag-item__quantity-number">1</span>
+              <button class="bag-item__plus" type="button">+</button>
+            </div>
+            <button class="bag-item__delete-btn" type="button">
+              Remove item
+            </button>
+          </div>
+        </div>
+      </li>
+      <!--4 item-->
+      <li class="shopping-bag__item">
+        <div class="item item--bag">
+          <figure class="item__figure item__figure--bag">
+            <img class="item__img" src="img/item_2.jpg" alt="T-shirt" width="240" height="340">
+            <figcaption class="item__overlay">
+              <p class="item__overlay-caption">View item</p>
+            </figcaption>
+          </figure>
+          <div class="item__caption item__caption--bag">
+            <h4 class="item__name item__name--bag">Neck Knitted Jumper</h4>
+            <p class="item__price item__price--bag">
+              &#163;<span class="item__price-value">76.25</span>
+            </p>
+            <p class="bag-item__color">
+              Color: <span class="bag-item__color-selected">Green</span>
+            </p>
+            <p class="bag-item__size">
+              Size: <span class="bag-item__size-selected">UK 19</span>
+            </p>
+            <div class="bag-item__quantity">
+              <span>Quantity: </span>
+              <button class="bag-item__minus" type="button">-</button>
+              <span class="bag-item__quantity-number">1</span>
+              <button class="bag-item__plus" type="button">+</button>
+            </div>
+            <button class="bag-item__delete-btn" type="button">
+              Remove item
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </article>
+<div class="border"></div>
+<div class="free-delivery">
+  <p class="free-delivery__paragraph">
+    You've qualified for Fre UK Next Day Delivery on your order.
+    Don't forget to enter the code
+    <span class="free-delivery__span">nextday</span>
+    at checkout.
+  </p>
+</div>
+<div class="shopping-bag-total">
+  <div class="shopping-bag-total__price-block">
+    <p class="shopping-bag-total__discount">
+      Applied discount: &#163;15.00
+    </p>
+    <p class="shopping-bag-total__price-wrapper">
+      Total price: &#163;
+      <span class="shopping-bag-total__price" id="total-price">236.50</span>
+    </p>
+  </div>
+  <!--buttons-->
+  <div class="shopping-bag-total__buy-btn-block">
+    <button id="buy-btn" class="shopping-bag-total__buy-btn button" type="button">
+      Checkout
+    </button>
+  </div>
+  <button id="empty-btn" class="shopping-bag-total__empty-btn" type="button">
+    Empty bag
+  </button>
+</div>
+
+</div>
+<div class="border"></div>
+<!--________________________FOOTER________________________-->
+<footer class="footer">
+  <!--1 section-->
+  <div class="footer-links">
+    <section class="footer-links__section">
+      <h5 class="footer-links__heading">Quick Links</h5>
+      <ul class="footer-links__list">
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Store Locator</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Gift Cards</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Size guide</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">About us</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Support</a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-links__section">
+      <h5 class="footer-links__heading">Customer Care</h5>
+      <ul class="footer-links__list">
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Customer service</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Track my order</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Return policy</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Shipping & delivery</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Contact us</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Careers</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <!--2 section-->
+  <div class="contacts">
+    <section class="contacts__section">
+      <h5 class="contacts__heading">Questions</h5>
+      <a class="contacts__link tweet-us-link link" href="#">Tweet us <b>@template</b></a>
+    </section>
+    <section class="contacts__section">
+      <h5 class="contacts__heading">Order by phone</h5>
+      <a class="contacts__link link" href="tel:88004094712">8-800-409-47-12</a>
+    </section>
+    <div class="delivery-section">
+      <p class="delivery-section__paragraph">
+        We have our own delivery service which operates in 23 major
+        European cities. Delivery time - 3-5 days.
+      </p>
+    </div>
+  </div>
+  <!--3 section-->
+  <ul class="other-links">
+    <li class="other-links__item">
+      <a class="other-links__link link" href="#">Legal notice</a>
+    </li>
+    <li class="other-links__item">
+      <a class="other-links__link link" href="#">Privacy Policy</a>
+    </li>
+    <li class="other-links__item">
+      <a class="other-links__link link" href="#">Site map</a>
+    </li>
+  </ul>
+  <!-- 4 section-->
+  <div class="social">
+    <a class="social__link" href="#">
+      <img src="img/fb.png" alt="Facebook" width="8" height="14">
+    </a>
+    <a class="social__link" href="#">
+      <img src="img/twi.png" alt="Twitter" width="14" height="11">
+    </a>
+  </div>
+  <!--5 section-->
+  <p class="copyright">&#169;2010-2015, The Template Group inc.</p>
+  <!--6 section-->
+  <button class="share" type="button">
+    <b class="share__caption">Share</b>
+    <span class="share__counter">1 437</span>
+  </button>
+</footer>
+<div class="footer-border"></div>
+
+<!--scripts-->
+<script src="js/common-min.js"></script>
+<script src="data/catalog.js"></script>
+<script src="js/shopping-bag-min.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TL Start</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,600" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400i" rel="stylesheet">
+  <link href="css/normalize-min.css" rel="stylesheet">
+  <link href="css/styles-min.css" rel="stylesheet">
+</head>
+<body>
+<div class="main-wrapper">
+  <!--___________________________HEADER___________________________-->
+  <header class="header">
+    <div class="header__top-header">
+      <a class="logo-link" href="start.html">
+        <h1 class="logo--short" title="Home">TL</h1>
+        <h1 class="logo--full" title="Home">Template</h1>
+      </a>
+      <div class="header__options">
+        <div class="authorization">
+          <a class="authorization__email" href="#">E-mail</a>
+          <a class="authorization__sign-up" href="#">Sign up</a>
+        </div>
+        <a class="shopping-bag-link" href="shopping-bag.html" title="Shopping Bag">Bag
+          <p class="shopping-bag-link__price hidden">
+            &#163;<span id="bag-price">0</span>
+          </p>
+          <p class="shopping-bag-link__counter">
+            (<span id="bag-counter">0</span>)
+          </p>
+        </a>
+        <button id="menu-btn" class="menu-btn menu-btn--opened" type="button" title="Menu">
+        </button>
+      </div>
+    </div>
+    <nav id="nav" class="nav hidden">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link nav__link--active" href="#">Women</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Men</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Handbags</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Accessories</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Sale</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">New Arrivals</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Clearance</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Store Locator</a></li>
+      </ul>
+      <div class="search">
+        <input class="search__field" type="search" name="search" placeholder="Style Name">
+      </div>
+    </nav>
+  </header>
+  <div class="border"></div>
+  <!--_________promo___________________________-->
+  <article class="promo">
+    <a class="promo-item" href="item.html">
+      <figure class="promo-item__wrapper">
+        <img class="promo-item__img" src="img/nike.jpg" alt="Nike Red" width="650" height="384">
+        <figcaption class="promo-item__caption">
+          <h3 class="promo-item__name">
+            Nike Red
+          </h3>
+        </figcaption>
+      </figure>
+    </a>
+    <a class="promo-item" href="catalog.html">
+      <figure class="promo-item__wrapper">
+        <img class="promo-item__img" src="img/hats.jpg" alt="Caps and Hats" width="650" height="384">
+        <figcaption class="promo-item__caption">
+          <h3 class="promo-item__name">
+            Caps & Hats
+          </h3>
+          <p class="promo-item__sale">
+            Sale -50%
+          </p>
+        </figcaption>
+      </figure>
+    </a>
+  </article>
+
+  <div class="border"></div>
+  <main class="main">
+    <!--____________________best offer_____________________-->
+    <article class="best-offer">
+      <!--_________headings_________-->
+      <h2 class="best-offer__heading">Best offer</h2>
+      <p class="best-offer__paragraph">
+        This offer is valid in-store and online.
+        Prices displayed reflect this additional discount.
+        This offer ends at 11.59 GMT on March 1st 2018
+      </p>
+      <!--_________content_________-->
+      <div class="best-offer__content-wrapper">
+        <section class="best-offer__items">
+          <!--_________first item________-->
+          <div class="best-offer__item">
+            <button class="best-offer__up-btn" type="button"></button>
+
+            <a class="item" href="item.html">
+              <figure class="item__figure">
+                <img class="item__img" src="img/item_1.jpg" alt="T-shirt" width="240" height="340">
+                <span class="item__new">NEW</span>
+                <figcaption class="item__overlay">
+                  <p class="item__overlay-caption">View item</p>
+                </figcaption>
+              </figure>
+              <div class="item__caption">
+                <h4 class="item__name">
+                  Only Skinny Jeans
+                </h4>
+                <span class="item__price">
+                &#163;65.50
+              </span>
+              </div>
+            </a>
+
+            <button class="best-offer__down-btn" type="button"></button>
+          </div>
+          <!--_________plus_________-->
+          <span class="best-offer__operator">+</span>
+          <!--_________second item_________-->
+          <div class="best-offer__item">
+            <button class="best-offer__up-btn" type="button"></button>
+            <a class="item" href="item.html">
+              <figure class="item__figure">
+                <img class="item__img" src="img/item_5.jpg" alt="Jeans" width="240" height="340">
+                <figcaption class="item__overlay">
+                  <p class="item__overlay-caption">View item</p>
+                </figcaption>
+              </figure>
+              <div class="item__caption">
+                <h4 class="item__name">
+                  Levi's Jeans for women
+                </h4>
+                <span class="item__price">
+                &#163;95.50
+              </span>
+              </div>
+            </a>
+            <button class="best-offer__down-btn" type="button"></button>
+          </div>
+        </section>
+        <span class="best-offer__operator best-offer__operator--equal">=</span>
+        <!--_________total price_________-->
+        <div class="best-offer__total-price">
+          <p class="best-offer__old-total-price">&#163;161.00</p>
+          <p class="best-offer__new-total-price">&#163;146.00</p>
+        </div>
+        <!--_________add to bag button_________-->
+        <div class="best-offer__add-btn-wrapper">
+          <a class="best-offer__add-btn button" href="shopping-bag.html">Add to bag</a>
+        </div>
+      </div>
+    </article>
+    <!--_____________________new arrivals__________________-->
+    <div class="border"></div>
+    <article class="new-arrivals">
+      <!--heading-->
+      <h2 class="new-arrivals__heading">New arrivals</h2>
+      <!--items container-->
+      <div class="new-arrivals__container">
+        <div class="new-arrivals__item">
+          <a class="item" href="item.html">
+            <figure class="item__figure">
+              <img class="item__img" src="img/item_1.jpg" alt="T-shirt" width="240" height="340">
+              <span class="item__new">NEW</span>
+              <figcaption class="item__overlay">
+                <p class="item__overlay-caption">View item</p>
+              </figcaption>
+            </figure>
+            <div class="item__caption">
+              <h4 class="item__name">
+                Only Skinny Jeans
+              </h4>
+              <span class="item__price">
+              &#163;65.50
+            </span>
+            </div>
+          </a>
+        </div>
+        <div class="new-arrivals__item">
+          <a class="item" href="item.html">
+            <figure class="item__figure">
+              <img class="item__img" src="img/item_2.jpg" alt="Jumper" width="240" height="340">
+              <span class="item__new">NEW</span>
+              <figcaption class="item__overlay">
+                <p class="item__overlay-caption">View item</p>
+              </figcaption>
+            </figure>
+            <div class="item__caption">
+              <h4 class="item__name">
+                Neck Knitted Jumper
+              </h4>
+              <span class="item__price">
+              &#163;76.25
+            </span>
+            </div>
+          </a>
+        </div>
+        <div class="new-arrivals__item">
+          <a class="item" href="item.html">
+            <figure class="item__figure">
+              <img class="item__img" src="img/item_3.jpg" alt="Item" width="240" height="340">
+              <figcaption class="item__overlay">
+                <p class="item__overlay-caption">View item</p>
+              </figcaption>
+            </figure>
+            <div class="item__caption">
+              <h4 class="item__name">
+                Turtle Neck Jumper in Rib
+              </h4>
+              <span class="item__price">
+              &#163;130.25
+            </span>
+            </div>
+          </a>
+        </div>
+        <div class="new-arrivals__item">
+          <a class="item" href="item.html">
+            <figure class="item__figure">
+              <img class="item__img" src="img/item_4.jpg" alt="Item" width="240" height="340">
+              <figcaption class="item__overlay">
+                <p class="item__overlay-caption">View item</p>
+              </figcaption>
+            </figure>
+            <div class="item__caption">
+              <h4 class="item__name">
+                With Patchwork Crochet
+              </h4>
+              <span class="item__price">
+              &#163;80.60
+            </span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!--button-->
+      <a class="new-arrivals__btn button" href="catalog.html">
+        All arrivals
+      </a>
+    </article>
+  </main>
+
+</div>
+<div class="border"></div>
+<!--_________________________FOOTER_________________________-->
+<footer class="footer">
+  <!--1 section-->
+  <div class="footer-links">
+    <section class="footer-links__section">
+      <h5 class="footer-links__heading">Quick Links</h5>
+      <ul class="footer-links__list">
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Store Locator</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Gift Cards</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Size guide</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">About us</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Support</a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer-links__section">
+      <h5 class="footer-links__heading">Customer Care</h5>
+      <ul class="footer-links__list">
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Customer service</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Track my order</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Return policy</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Shipping & delivery</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Contact us</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link link" href="#">Careers</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <!--2 section-->
+  <div class="contacts">
+    <section class="contacts__section">
+      <h5 class="contacts__heading">Questions</h5>
+      <a class="contacts__link tweet-us-link link" href="#">Tweet us <b>@template</b></a>
+    </section>
+    <section class="contacts__section">
+      <h5 class="contacts__heading">Order by phone</h5>
+      <a class="contacts__link link" href="tel:88004094712">8-800-409-47-12</a>
+    </section>
+    <div class="delivery-section">
+      <p class="delivery-section__paragraph">
+        We have our own delivery service which operates in 23 major
+        European cities. Delivery time - 3-5 days.
+      </p>
+    </div>
+  </div>
+  <!--3 section-->
+  <ul class="other-links">
+    <li class="other-links__item">
+      <a class="other-links__link link" href="#">Legal notice</a>
+    </li>
+    <li class="other-links__item">
+      <a class="other-links__link link" href="#">Privacy Policy</a>
+    </li>
+    <li class="other-links__item">
+      <a class="other-links__link link" href="#">Site map</a>
+    </li>
+  </ul>
+  <!-- 4 section-->
+  <div class="social">
+    <a class="social__link" href="#">
+      <img src="img/fb.png" alt="Facebook" width="8" height="14">
+    </a>
+    <a class="social__link" href="#">
+      <img src="img/twi.png" alt="Twitter" width="14" height="11">
+    </a>
+  </div>
+  <!--5 section-->
+  <p class="copyright">&#169;2010-2015, The Template Group inc.</p>
+  <!--6 section-->
+  <button class="share" type="button">
+    <b class="share__caption">Share</b>
+    <span class="share__counter">1 437</span>
+  </button>
+</footer>
+<div class="footer-border"></div>
+
+<!--scripts-->
+<script src="js/common-min.js"></script>
+</body>
+</html>
